@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+    <title>Carte bancaire</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"></link>
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css"></link>
+    <!--<![endif]-->
+    
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/home-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/home.css"></link>
+    <!--<![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a th:href="@{/map}" class="pure-menu-link">T:Carte</a></li>
+                <li class="pure-menu-item"><a th:href="@{/login}" class="pure-menu-link">T:Sign In/Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splash-container">
+        <div class="splash">
+            <a th:href="@{/map}"><img src="images/splash.png"></img></a>
+            <div><h3>T:Nehmen Sie Platz!</h3></div>
+            <div><h3>T:Entdecken Sie die schönsten Plätze in der Natur!</h3></div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+
+                <h2 class="content-head content-head-ribbon">Région d'intérêt: Vernier</h2>
+
+                <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                    <img width="300" alt="Vernier" class="pure-img-responsive" src="http://maps.maphill.com/atlas/51n40-4w10/maps/physical-map/fancy-physical-map-of-pen-y-banc.jpg"></img>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+
+                <h2 class="content-head content-head-ribbon">Participez au concours</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor.
+                </p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="content-head is-center">Coup de coeur de la rédaction</h2>
+
+            <div class="pure-g">
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        Banc 1
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        Banc 2
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        Banc 3
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        Banc 4
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
